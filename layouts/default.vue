@@ -1,0 +1,44 @@
+<script setup lang="ts">
+const {locale, setLocale, tm} = useI18n()
+import RpHeader from '@/components/rp-header.vue'
+import RpFooter from '@/components/rp-footer.vue'
+
+const seo_title = computed(() => {
+  return tm("shop.seo.title");
+})
+const seo_ogTitle = computed(() => {
+  return tm("shop.seo.ogTitle");
+})
+const seo_description = computed(() => {
+  return tm("shop.seo.description");
+})
+const seo_ogDescription = computed(() => {
+  return tm("shop.seo.ogDescription");
+})
+
+// SEO 会根据中英文切换做不同的SEO
+useSeoMeta({
+  title: seo_title,
+  ogTitle: seo_ogTitle,
+  description: seo_description,
+  ogDescription: seo_ogDescription,
+  ogImage: 'https://oss-cdn.tearful.cn/shop/banner/AP_memorial_day_sale_BANNERSv2-01_2048x2048.webp'
+})
+
+</script>
+<template>
+  <v-app>
+    <!--导航栏-->
+    <RpHeader/>
+
+    <!--主页面-->
+    <!-- <NuxtPage/> -->
+
+    <!--尾部-->
+    <!-- <RpFooter/> -->
+  </v-app>
+</template>
+
+<style scoped>
+
+</style>
