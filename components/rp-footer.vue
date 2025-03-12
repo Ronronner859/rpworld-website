@@ -1,36 +1,91 @@
-<!--页脚组件-->
 <template>
-    <footer>
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>关于我们</h3>
-                <p>我们是一家专注于提供高品质商品的在线商店。</p>
+    <footer class="footer-container mx-auto">
+        <div class="tags-section">
+            <span class="tags-label">Tags:</span>
+            <div class="tags-list">
+                <NuxtLink to="/manufacturing/on-demand" class="tag-link">On-demand manufacturing</NuxtLink>
+                <NuxtLink to="/manufacturing/precision" class="tag-link">Precision manufacturing</NuxtLink>
+                <NuxtLink to="/manufacturing/injection-molding" class="tag-link">Injection molding</NuxtLink>
+                <NuxtLink to="/manufacturing/cnc-machining" class="tag-link">CNC machining</NuxtLink>
+                <NuxtLink to="/esg-practices" class="tag-link">ESG Practices</NuxtLink>
             </div>
-              <div class="footer-section">
-                <h3>联系方式</h3>
-                <p>电话：1234567890</p>
-                <p>邮箱：info@example.com</p>
-              </div>
-              <div class="footer-section">
-                <h3>关注我们</h3>
-                <ul>
-                  <li><a href="#">Facebook</a></li>
-                  <li><a href="#">Twitter</a></li>
-                  <li><a href="#">Instagram</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2025 我们的在线商店. 保留所有权利。</p>
         </div>
     </footer>
 </template>
 
 <script setup lang="ts">
-import {ref} from "vue";
-
 </script>
 
 <style scoped>
+.footer-container {
+    padding: 1rem 0rem;
+    background-color: white;
+    border-radius: 2rem;
+    width: 1100px;
+}
 
+.tags-section {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.tags-label {
+    font-weight: 600;
+    color: #333;
+}
+
+.tags-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.tag-link {
+    color: #3B82F6;
+    text-decoration: underline;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.tag-link:hover {
+    color: #2563EB;
+}
+
+/* 移动端适配 */
+@media (max-width: 1200px) {
+    .footer-container {
+        width: 100%;
+        padding: 1rem;
+        margin: 0 1rem;
+        border-radius: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .tags-section {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+
+    .tags-list {
+        width: 100%;
+        gap: 0.5rem;
+    }
+
+    .tag-link {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-container {
+        margin: 0 0.5rem;
+    }
+
+    .tag-link {
+        font-size: 0.8rem;
+    }
+}
 </style>

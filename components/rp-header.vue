@@ -1,10 +1,6 @@
-<!--首部栏组件-->
 <script setup lang="ts">
 import { ref } from "vue";
-import { storeToRefs } from "pinia";
-const appBarStyle = useAppBarStyle();
-const userStore = useUserPinia()
-const { drawer } = storeToRefs(userStore);
+
 const { locale, setLocale } = useI18n()
 
 // 导航菜单项
@@ -97,7 +93,7 @@ const toggleMobileMenu = () => {
 
           <!-- Mobile Menu Button -->
           <button class="lg:hidden text-gray-700" @click="toggleMobileMenu">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg class="w-14 h-14" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path v-if="!isMobileMenuOpen" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                 d="M4 6h16M4 12h16M4 18h16" />
               <path v-else stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />

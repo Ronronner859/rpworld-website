@@ -6,22 +6,22 @@ import RpFooter from '@/components/rp-footer.vue'
 const seo_title = computed(() => {
   return tm("rp-world.title");
 })
-const seo_ogTitle = computed(() => {
+const seo_rpTitle = computed(() => {
   return tm("rp-world.ogTitle");
 })
 const seo_description = computed(() => {
   return tm("rp-world.description");
 })
-const seo_ogDescription = computed(() => {
+const seo_rpDescription = computed(() => {
   return tm("rp-world.ogDescription");
 })
 
-// SEO 会根据中英文切换做不同的SEO
+// SEO会根据中英文切换做不同的SEO 利于搜索引擎收录
 useSeoMeta({
   title: seo_title,
-  ogTitle: seo_ogTitle,
+  ogTitle: seo_rpTitle,
   description: seo_description,
-  ogDescription: seo_ogDescription,
+  ogDescription: seo_rpDescription,
   ogImage: ''
 })
 
@@ -32,10 +32,10 @@ useSeoMeta({
     <RpHeader/>
 
     <!--主页面-->
-    <!-- <NuxtPage/> -->
+    <NuxtPage/>
 
     <!--尾部-->
-    <!-- <RpFooter/> -->
+    <RpFooter/>
   </v-app>
 </template>
 

@@ -96,24 +96,22 @@ const image_load = (val: any) => {
     </v-sheet>
 
     <!--  grocery shopping to hailing taxis, businesses across industries—healthcare, education, banking, and e-commerce—are shifting toward flexible and tailored solutions that meet the unique needs of customers. The manufacturing industry is no exception. On-demand manufacturing is a transformative approach that caters to the modern manufacturing demand for speed, flexibility, and precision. By enabling faster production cycles and unparalleled customization, on-demand manufacturing has become the go-to solution for turning innovative ideas into tangible results. -->
-    <v-sheet class="grocery-shopping-container">
+    <!-- <v-sheet class="grocery-shopping-container">
       <div class="grocery-shopping">
-        {{ $t('rp-center-text.title') }}
+        {{ $t('rp-center-text.grocery_shopping_text') }}
       </div>
-    </v-sheet>
+    </v-sheet> -->
 
     <!-- company introduction-->
-    <v-sheet class="company-intro">
+    <!-- <v-sheet class="company-intro">
       <div class="container mx-auto px-0">
         <div class="intro-content">
-          <!-- Text Content -->
           <div class="intro-text">
             <p class="intro-paragraph">
               {{ $t('rp-center-text.subtitle') }}
             </p>
 
             <ul class="industry-list">
-              <!-- Medical Devices -->
               <li class="industry-item">
                 <span>
                   <span class="industry-title">{{ $t('rp-center-text.medical_devices') }}</span>
@@ -121,7 +119,6 @@ const image_load = (val: any) => {
                 </span>
               </li>
 
-              <!-- Scientific Instruments -->
               <li class="industry-item">
                 <span>
                   <span class="industry-title">{{ $t('rp-center-text.scientific_instruments') }}</span>
@@ -129,7 +126,6 @@ const image_load = (val: any) => {
                 </span>
               </li>
 
-              <!-- Automotive -->
               <li class="industry-item">
                 <span>
                   <span class="industry-title">{{ $t('rp-center-text.automotive') }}</span>
@@ -139,50 +135,48 @@ const image_load = (val: any) => {
             </ul>
           </div>
 
-          <!-- Single Right Image -->
           <div class="intro-image">
             <img src="~/assets/imgs/img-04.png" alt="Manufacturing Process" class="main-image">
           </div>
         </div>
       </div>
-    </v-sheet>
+    </v-sheet> -->
 
     <!--  标题：Fabrication à la demande vs. fabrication traditionnelle -->
-    <v-sheet class="fabrication-title">
+    <!-- <v-sheet class="fabrication-title">
       <div class="container mx-auto">
         <div class="title">
           {{ $t('rp-center-text.title_fabrication') }}
         </div>
       </div>
-    </v-sheet>
+    </v-sheet> -->
 
-    <v-sheet class="grocery-shopping-container">
+    <!-- <v-sheet class="grocery-shopping-container">
       <div class="grocery-shopping">
         {{ $t('rp-center-text.title_fabrication_text') }}
       </div>
-    </v-sheet>
+    </v-sheet> -->
 
     <!-- Why We Love On-Demand Manufacturing -->
-    <v-sheet class="on-demand-manufacturing">
+    <!-- <v-sheet class="on-demand-manufacturing">
       <div class="container mx-auto">
         <div class="title font-bold">
           {{ $t('rp-center-text.on_demand_manufacturing') }}
         </div>
       </div>
-    </v-sheet>
+    </v-sheet> -->
 
     <!-- On-demand manufacturing is a game-changer for businesses, combining speed, flexibility, and cost-efficiency in ways traditional methods cannot. Here's why it matters: -->
-    <v-sheet class="on-demand-manufacturing-text">
+    <!-- <v-sheet class="on-demand-manufacturing-text">
       <div class="grocery-shopping">
         {{ $t('rp-center-text.on_demand_manufacturing_text') }}
       </div>
-    </v-sheet>
+    </v-sheet> -->
 
     <!-- manufacturing-box -->
-    <v-sheet class="manufacturing-box py-12">
+    <!-- <v-sheet class="manufacturing-box py-12">
       <div class="container mx-auto px-4">
         <div class="manufacturing-grid">
-          <!-- 1. Flexibility and Personalization -->
           <div class="manufacturing-item">
             <div class="item-header">
               <h3 class="item-title">1. Flexibility and Personalization</h3>
@@ -207,7 +201,6 @@ const image_load = (val: any) => {
             </div>
           </div>
 
-          <!-- 2. Faster Turnaround Times -->
           <div class="manufacturing-item">
             <div class="item-header">
               <h3 class="item-title">2. Faster Turnaround Times</h3>
@@ -222,7 +215,6 @@ const image_load = (val: any) => {
             </div>
           </div>
 
-          <!-- 3. Cost Efficiency & Resource Optimization -->
           <div class="manufacturing-item">
             <div class="item-header">
               <h3 class="item-title">3. Cost Efficiency & Resource Optimization</h3>
@@ -239,7 +231,6 @@ const image_load = (val: any) => {
             </div>
           </div>
 
-          <!-- 4. Innovation at Its Core -->
           <div class="manufacturing-item">
             <div class="item-header">
               <h3 class="item-title">4. Innovation at Its Core</h3>
@@ -262,14 +253,34 @@ const image_load = (val: any) => {
           </div>
         </div>
       </div>
-    </v-sheet>
+    </v-sheet> -->
 
   </v-app>
 
 </template>
 
 <style scoped lang="scss">
+.banner-container {
+  width: 100%;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+}
 
+.banner-image {
+  width: 100%;
+  // height: 10vh; 
+  object-fit: cover; 
+  display: block;
+
+  @media (max-width: 768px) {
+    height: 18vh; 
+  }
+
+  @media (max-width: 480px) {
+    height: 10vh; 
+  }
+}
 
 .grocery-shopping-container {
   width: 100%;
