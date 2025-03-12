@@ -1,4 +1,10 @@
 {
+    "rp-world": {
+        "title": "Produzione su richiesta vs. produzione tradizionale",
+        "description": "Produzione su richiesta vs. produzione tradizionale",
+        "ogDescription": "Produzione su richiesta vs. produzione tradizionale",
+        "ogTitle": "Produzione su richiesta vs. produzione tradizionale"
+    },
     "rp-header": {
         "title": "CHIEDI UN PREZZO",
         "menu": [
