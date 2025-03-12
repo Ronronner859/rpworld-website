@@ -286,11 +286,11 @@ const image_load = (val: any) => {
           <div class="content-second-left">
             <p class="font-bold mb-2">2. Faster Turnaround Times</p>
             <p>Time waits for no one, especially in industries where innovation drives competition. On-demand
-              manufacturing’s streamlined workflows and advanced technologies slash production timelines, enabling
+              manufacturing's streamlined workflows and advanced technologies slash production timelines, enabling
               businesses to move from design to delivery in record time.
               <br>
               This rapid turnaround can be extremely beneficial for industries like automotive and consumer electronics,
-              where staying ahead of trends can make or break a product’s success. The ability to quickly iterate and
+              where staying ahead of trends can make or break a product's success. The ability to quickly iterate and
               refine designs ensures companies remain at the forefront of their markets.
             </p>
           </div>
@@ -355,7 +355,7 @@ As industries strive to reduce their environmental footprint, on-demand manufact
           </div>
         </div>
         <div class="content-eighth">
-          <p class="mb-2">Ready to revolutionize your manufacturing approach? Let’s build something amazing
+          <p class="mb-2">Ready to revolutionize your manufacturing approach? Let's build something amazing
             together. Contact us today to discuss your next project!</p>
         </div>
       </div>
@@ -373,15 +373,32 @@ As industries strive to reduce their environmental footprint, on-demand manufact
   background-color: #ffffff;
   color: #333333;
   padding: 1rem 0;
-  width: 1100px;
+  width: 100%;
+  max-width: 1100px;
   margin: 0 auto;
+
+  @media (max-width: 768px) {
+    max-width: 100%;
+    padding: 1rem;
+  }
+
+  .title {
+    @media (max-width: 768px) {
+      font-size: 1.25rem;
+      margin-bottom: 1rem;
+    }
+  }
 
   .content {
     font-size: 1rem;
     line-height: 1.5;
     margin-top: 1rem;
-  }
 
+    @media (max-width: 768px) {
+      font-size: 0.9rem;
+      margin: 0.75rem 0;
+    }
+  }
 
   .content-first,
   .content-second,
@@ -391,12 +408,49 @@ As industries strive to reduce their environmental footprint, on-demand manufact
     flex-direction: row;
     justify-content: space-between;
     margin-top: 1rem;
+    gap: 2rem;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      gap: 1rem;
+      margin-top: 0.75rem;
+    }
+
+    .content-first-left,
+    .content-fourth-left {
+      flex: 1;
+      margin-right: 1rem;
+
+      @media (max-width: 768px) {
+        margin-right: 0;
+      }
+    }
+
+    .content-first-right,
+    .content-fourth-right {
+      flex: 1;
+      
+      @media (max-width: 768px) {
+        width: 100%;
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
+    }
   }
 
   .content-seventh {
     background-color: #f6f6f8;
+
     .content-first-left {
       padding: 20px;
+
+      @media (max-width: 768px) {
+        padding: 15px;
+      }
     }
   }
 
@@ -405,8 +459,65 @@ As industries strive to reduce their environmental footprint, on-demand manufact
   .content-sixth,
   .content-eighth {
     margin-top: 1rem;
+
+    @media (max-width: 768px) {
+      margin-top: 0.75rem;
+      // padding: 0 0.5rem;
+    }
   }
 
+  // 列表样式优化
+  .list-disc {
+    padding-left: 1.25rem;
+
+    @media (max-width: 768px) {
+      padding-left: 1rem;
+    }
+
+    li {
+      margin-bottom: 0.5rem;
+      line-height: 1.4;
+
+      @media (max-width: 768px) {
+        font-size: 0.9rem;
+        margin-bottom: 0.4rem;
+      }
+    }
+  }
+
+  // 标题和段落样式
+  .font-bold {
+    margin-bottom: 0.75rem;
+    font-size: 1.1rem;
+
+    @media (max-width: 768px) {
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  p {
+    line-height: 1.6;
+    margin-bottom: 0.75rem;
+
+    @media (max-width: 768px) {
+      font-size: 0.9rem;
+      line-height: 1.5;
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  // 图片样式优化
+  .feature-image {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: cover;
+
+    @media (max-width: 768px) {
+      max-height: 180px;
+    }
+  }
 }
 
 
