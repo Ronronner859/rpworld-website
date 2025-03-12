@@ -3,11 +3,11 @@
         <div class="tags-section">
             <span class="tags-label">Tags:</span>
             <div class="tags-list">
-                <NuxtLink to="/manufacturing/on-demand" class="tag-link">On-demand manufacturing</NuxtLink>
+                <!-- <NuxtLink to="/manufacturing/on-demand" class="tag-link">On-demand manufacturing</NuxtLink>
                 <NuxtLink to="/manufacturing/precision" class="tag-link">Precision manufacturing</NuxtLink>
                 <NuxtLink to="/manufacturing/injection-molding" class="tag-link">Injection molding</NuxtLink>
                 <NuxtLink to="/manufacturing/cnc-machining" class="tag-link">CNC machining</NuxtLink>
-                <NuxtLink to="/esg-practices" class="tag-link">ESG Practices</NuxtLink>
+                <NuxtLink to="/esg-practices" class="tag-link">ESG Practices</NuxtLink> -->
             </div>
         </div>
     </footer>
