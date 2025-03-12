@@ -96,15 +96,15 @@ const image_load = (val: any) => {
     </v-sheet>
 
     <!--  grocery shopping to hailing taxis, businesses across industries—healthcare, education, banking, and e-commerce—are shifting toward flexible and tailored solutions that meet the unique needs of customers. The manufacturing industry is no exception. On-demand manufacturing is a transformative approach that caters to the modern manufacturing demand for speed, flexibility, and precision. By enabling faster production cycles and unparalleled customization, on-demand manufacturing has become the go-to solution for turning innovative ideas into tangible results. -->
-    <!-- <v-sheet class="grocery-shopping-container">
+    <v-sheet class="grocery-shopping-container">
       <div class="grocery-shopping">
         {{ $t('rp-center-text.grocery_shopping_text') }}
       </div>
-    </v-sheet> -->
+    </v-sheet>
 
     <!-- company introduction-->
-    <!-- <v-sheet class="company-intro">
-      <div class="container mx-auto px-0">
+    <v-sheet class="company-intro">
+      <div class="container mx-auto">
         <div class="intro-content">
           <div class="intro-text">
             <p class="intro-paragraph">
@@ -140,7 +140,7 @@ const image_load = (val: any) => {
           </div>
         </div>
       </div>
-    </v-sheet> -->
+    </v-sheet>
 
     <!--  标题：Fabrication à la demande vs. fabrication traditionnelle -->
     <!-- <v-sheet class="fabrication-title">
@@ -255,6 +255,29 @@ const image_load = (val: any) => {
       </div>
     </v-sheet> -->
 
+    <!-- On-Demand Manufacturing vs. Traditional Manufacturing -->
+    <v-sheet class="on-demand-vs-traditional">
+      <div class="container mx-auto">
+        <div class="title font-bold">
+          {{ $t('rp-center-text.on_demand_vs_traditional') }}
+        </div>
+        <p class="traditional-text">{{ $t('rp-center-text.on_demand_vs_traditional_text') }}</p>
+      </div>
+    </v-sheet>
+
+    <!-- todo: 图片 -->
+
+    <!-- When it comes to the product development journey, the differences between traditional manufacturing and on-demand manufacturing are clearly highlighted in the chart below, showcasing the distinct advantages and challenges of each approach. -->
+    <v-sheet class="product-development-journey">
+      <div class="container mx-auto">
+        <div class="title">
+          {{ $t('rp-center-text.product_development_journey') }}
+        </div>
+      </div>
+    </v-sheet>
+
+    <!-- Todo: 图片 -->
+
     <!-- Why We Love On-Demand Manufacturing -->
     <v-sheet class="on-demand-manufacturing">
       <div class="container mx-auto">
@@ -342,7 +365,7 @@ As industries strive to reduce their environmental footprint, on-demand manufact
         <div class="content-seventh">
           <div class="content-first-left">
             <p class="font-bold mb-2">Why Choose RPWORLD for On-demand Manufacturing?</p>
-            <ul class="list-disc pl-5">
+            <ul class="list-disc pl-5 pt-5">
               <li>20+ years of industry experience</li>
               <li>Cutting-edge CNC machining, injection molding, sheet metal fabrication, full suite of finishing
                 options</li>
@@ -364,9 +387,28 @@ As industries strive to reduce their environmental footprint, on-demand manufact
 </template>
 
 <style scoped lang="scss">
-.feature-image {
-  width: 650px;
-  height: 200px;
+
+
+
+.product-development-journey,
+.on-demand-vs-traditional {
+  background-color: #ffffff;
+  color: #333333;
+  padding: 1rem 0 0 0;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+
+  @media (max-width: 768px) {
+    max-width: 100%;
+    padding: 1rem;
+  }
+}
+
+.traditional-text {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-top: 1rem;
 }
 
 .on-demand-manufacturing {
@@ -511,7 +553,7 @@ As industries strive to reduce their environmental footprint, on-demand manufact
   .feature-image {
     width: 100%;
     height: auto;
-    max-height: 200px;
+    // max-height: 200px;
     object-fit: cover;
 
     @media (max-width: 768px) {
@@ -550,7 +592,7 @@ As industries strive to reduce their environmental footprint, on-demand manufact
   padding: 20px;
 
   @media (max-width: 768px) {
-    padding: 0 16px;
+    padding: 0 16px 16px 16px;
   }
 }
 
@@ -560,6 +602,7 @@ As industries strive to reduce their environmental footprint, on-demand manufact
   margin: 0 auto;
   font-size: 16px;
   line-height: 1.5;
+  padding: 0 40px;
 
   @media (max-width: 768px) {
     font-size: 14px;
@@ -584,7 +627,7 @@ img {
   width: 100%;
   max-width: 1182px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 20px;
 
   @media (max-width: 768px) {
     padding: 0 16px;
@@ -671,6 +714,7 @@ img {
   display: flex;
   gap: 2rem;
   align-items: flex-start;
+  padding: 0 40px;
 
   @media (max-width: 991px) {
     flex-direction: column;
