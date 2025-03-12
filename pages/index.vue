@@ -255,11 +255,161 @@ const image_load = (val: any) => {
       </div>
     </v-sheet> -->
 
+    <!-- Why We Love On-Demand Manufacturing -->
+    <v-sheet class="on-demand-manufacturing">
+      <div class="container mx-auto">
+        <div class="title font-bold">
+          {{ $t('rp-center-text.on_demand_manufacturing') }}
+        </div>
+        <div class="content">
+          {{ $t('rp-center-text.on_demand_manufacturing_text') }}
+        </div>
+        <div class="content-first">
+          <div class="content-first-left mr-10">
+            <!-- {{ $t('rp-center-text.on_demand_manufacturing_text_first') }} -->
+            <p class="font-bold mb-2">1. Flexibility and Personalization</p>
+            <p>On-demand manufacturing enables businesses to produce exactly what is needed, precisely when it's needed.
+              This is especially beneficial for:</p>
+            <ul class="list-disc pl-5">
+              <li>Prototyping and product testing</li>
+              <li>Low-volume production runs</li>
+              <li>Highly customized or specialty parts</li>
+            </ul>
+            <p>For instance, in the medical sector—where precision and personalization are critical—on-demand
+              manufacturing allows for the rapid production of tailored components for advanced medical devices.</p>
+          </div>
+          <div class="content-first-right">
+            <img src="~/assets/imgs/img-03.jpg" alt="Manufacturing Process" class="feature-image">
+          </div>
+        </div>
+        <div class="content-second">
+          <div class="content-second-left">
+            <p class="font-bold mb-2">2. Faster Turnaround Times</p>
+            <p>Time waits for no one, especially in industries where innovation drives competition. On-demand
+              manufacturing’s streamlined workflows and advanced technologies slash production timelines, enabling
+              businesses to move from design to delivery in record time.
+              <br>
+              This rapid turnaround can be extremely beneficial for industries like automotive and consumer electronics,
+              where staying ahead of trends can make or break a product’s success. The ability to quickly iterate and
+              refine designs ensures companies remain at the forefront of their markets.
+            </p>
+          </div>
+        </div>
+        <div class="content-third">
+          <p class="font-bold mb-2">3. Cost Efficiency & Resource Optimization</p>
+          <p>Traditional manufacturing relies on bulk production, leading to higher costs, excess inventory, and
+            logistical inefficiencies. On-demand manufacturing eliminates these issues by:</p>
+          <ul class="list-disc pl-5">
+            <li>Producing only what is required, reducing waste</li>
+            <li>Lowering storage and inventory costs</li>
+            <li>Allowing smaller businesses to access high-quality manufacturing without massive investments</li>
+          </ul>
+        </div>
+        <div class="content-fourth">
+          <div class="content-fourth-left mr-10">
+            <p class="font-bold mb-2">4. Innovation at Its Core</p>
+            <p>With lower production barriers, startups, inventors, and established businesses can experiment with new
+              ideas and iterate rapidly. Recent years have shown how on-demand manufacturing drives groundbreaking
+              advancements, such as:</p>
+            <ul class="list-disc pl-5">
+              <li>Pandemic-related innovations – Rapid prototyping of ventilators and protective gear</li>
+              <li>Next-gen scientific instruments – Agile development of cutting-edge laboratory equipment</li>
+              <li>Smart home technology – Fast-tracking new devices for modern living</li>
+            </ul>
+          </div>
+          <div class="content-fourth-right">
+            <img src="~/assets/imgs/img-02.jpg" alt="Manufacturing Process" class="feature-image">
+          </div>
+        </div>
+        <div class="content-fifth">
+          <!-- 5. Sustainability and Environmental Impact
+As industries strive to reduce their environmental footprint, on-demand manufacturing offers a sustainable alternative to traditional methods. By producing only what is needed, it minimizes waste and reduces energy consumption. This model aligns seamlessly with the principles of the circular economy, allowing businesses to meet demand responsibly while appealing to eco-conscious consumers and stakeholders. -->
+          <p class="font-bold mb-2">5. Sustainability and Environmental Impact</p>
+          <p>As industries strive to reduce their environmental footprint, on-demand manufacturing offers a sustainable
+            alternative to traditional methods. By producing only what is needed, it minimizes waste and reduces energy
+            consumption. This model aligns seamlessly with the principles of the circular economy, allowing businesses
+            to meet demand responsibly while appealing to eco-conscious consumers and stakeholders.</p>
+        </div>
+        <!-- RPWORLD is Your Reliable Partner for On-demand Manufacturing -->
+        <div class="content-sixth">
+          <p class="font-bold mb-2">RPWORLD is Your Reliable Partner for On-demand Manufacturing</p>
+          <!-- At RPWORLD, we are passionate about delivering on-demand manufacturing solutions that combine speed, flexibility, and precision. Whether you need low-volume parts, or full production runs, our expertise ensures high-quality results with fast turnaround times. -->
+          <p>At RPWORLD, we are passionate about delivering on-demand manufacturing solutions that combine speed,
+            flexibility, and precision. Whether you need low-volume parts, or full production runs, our expertise
+            ensures
+            high-quality results with fast turnaround times.</p>
+        </div>
+        <div class="content-seventh">
+          <div class="content-first-left">
+            <p class="font-bold mb-2">Why Choose RPWORLD for On-demand Manufacturing?</p>
+            <ul class="list-disc pl-5">
+              <li>20+ years of industry experience</li>
+              <li>Cutting-edge CNC machining, injection molding, sheet metal fabrication, full suite of finishing
+                options</li>
+              <li>Trusted by leaders in medical, automotive, and technology industries</li>
+              <li>Seamless production processes to bring your ideas to life</li>
+            </ul>
+          </div>
+          <div class="content-first-right">
+            <img src="~/assets/imgs/img-01.jpg" alt="Manufacturing Process" class="feature-image">
+          </div>
+        </div>
+        <div class="content-eighth">
+          <p class="mb-2">Ready to revolutionize your manufacturing approach? Let’s build something amazing
+            together. Contact us today to discuss your next project!</p>
+        </div>
+      </div>
+    </v-sheet>
   </v-app>
-
 </template>
 
 <style scoped lang="scss">
+.feature-image {
+  width: 650px;
+  height: 200px;
+}
+
+.on-demand-manufacturing {
+  background-color: #ffffff;
+  color: #333333;
+  padding: 1rem 0;
+  width: 1100px;
+  margin: 0 auto;
+
+  .content {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-top: 1rem;
+  }
+
+
+  .content-first,
+  .content-second,
+  .content-fourth,
+  .content-seventh {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 1rem;
+  }
+
+  .content-seventh {
+    background-color: #f6f6f8;
+    .content-first-left {
+      padding: 20px;
+    }
+  }
+
+  .content-third,
+  .content-fifth,
+  .content-sixth,
+  .content-eighth {
+    margin-top: 1rem;
+  }
+
+}
+
+
 .banner-container {
   width: 100%;
   height: auto;
@@ -270,15 +420,15 @@ const image_load = (val: any) => {
 .banner-image {
   width: 100%;
   // height: 10vh; 
-  object-fit: cover; 
+  object-fit: cover;
   display: block;
 
   @media (max-width: 768px) {
-    height: 18vh; 
+    height: 18vh;
   }
 
   @media (max-width: 480px) {
-    height: 10vh; 
+    height: 10vh;
   }
 }
 
@@ -294,7 +444,7 @@ const image_load = (val: any) => {
 }
 
 .grocery-shopping {
-  max-width: 1100px;
+  max-width: 1182px;
   width: 100%;
   margin: 0 auto;
   font-size: 16px;
@@ -321,7 +471,7 @@ img {
 /* 容器响应式布局 */
 .container {
   width: 100%;
-  max-width: 1100px;
+  max-width: 1182px;
   margin: 0 auto;
   padding: 0 20px;
 
@@ -401,7 +551,7 @@ img {
 }
 
 .container {
-  max-width: 1100px;
+  max-width: 1182px;
   // margin: 0 auto;
   padding: 0;
 }
@@ -550,7 +700,7 @@ img {
 
   .image-content {
     flex: 1;
-    
+
     @media (max-width: 768px) {
       width: 100%;
       order: -1;
@@ -573,7 +723,7 @@ img {
   li {
     position: relative;
     margin-bottom: 0.5rem;
-    
+
     &:before {
       content: "•";
       color: #3B82F6;
